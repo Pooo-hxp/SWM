@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>人事部页面</title>
+		<!--		<link rel="stylesheet" href="css/bootstrap.css" />-->
+		<link rel="stylesheet" href="css/Personnel.css" />
+		<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+		<script src="js/Personnel.js"></script>
+	</head>
+
+	<body>
+
+		<div class="top">
+			<div class="top_left">
+				<img src="img/Personnel.png" width="180px" height="90px" />
+			</div>
+			<div class="top_center">
+				<ul>
+					<li>首页</li>
+					<li>
+						<a href="Person-Staff.html">职工信息</a>
+					</li>
+					<li>
+						<a href="Person-Updata.html">部门变动</a>
+					</li>
+					<li>
+						<a href="Person-Check.html">考勤信息</a>
+					</li>
+					<li>
+						<a href="Person-Payroll.html">校园管理</a>
+					</li>
+					<li><a name="StranLink" id="StranLink">繁體</a></li>
+				</ul>
+			</div>
+			<div class="top_right">
+				<div class="top_right_tuichu">
+					<a>
+						<p class="tuichu"><a for="tuichu" href="index.html">退出</a></p>
+					</a>
+				</div>
+				<div class="top_right_shezhi">
+					<a>
+						<p>设置</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner_div" id="banner_div">
+				<div class="banner_item">
+					<a href="#">
+						<div>信息公开</div>
+					</a>
+					<a href="#">
+						<div>内部传阅</div>
+					</a>
+					<a href="#">
+						<div>合理处置</div>
+					</a>
+				</div>
+				<div class="banner_item">
+					<a href="#">
+						<div>视情批准</div>
+					</a>
+					<a href="#">
+						<div>人数微调</div>
+					</a>
+					<a href="#">
+						<div>慎重调整</div>
+					</a>
+				</div>
+				<div class="banner_item">
+					<a href="#">
+						<div>信息公开</div>
+					</a>
+					<a href="#">
+						<div>工资单细化</div>
+					</a>
+					<a href="#">
+						<div>职称底薪</div>
+					</a>
+				</div>
+				<div class="banner_item">
+					<a href="#">
+						<div>职工管制</div>
+					</a>
+					<a href="#">
+						<div>萨芬公司</div>
+					</a>
+					<a href="#">
+						<div>看不到我</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div id="body">
+			<div id="body_left">
+				<div>欢迎你</div>
+				<div>
+					<img src="img/foo.jpg" width="80px" height="80px" />
+					<a style="color: green;" class="uname">人事部 </a>
+				</div>
+				<p>１９７５年二、三月间</p>
+				<p>一个平平常常的日子</p>
+				<p>细蒙蒙的雨丝夹着雪花</p>
+				<p>向大地飘洒着</p>
+				<p>时令已快到惊蛰</p>
+				<p>雪当然再不会存留</p>
+				<p>往往还没等落地</p>
+				<p>就消失得无踪无影了</p>
+				<p>黄土高原严寒而漫长的</p>
+				<p>冬天看来就要过去</p>
+				<p>但那真正温暖的春天</p>
+			</div>
+			<div id="body_right_up">
+				<div id="body_right_up_head">
+					<h3>认真工作，好好生活~</h3>
+				</div>
+				<div id="body_right_up_nack">
+					<div class="left">
+						<img src="img/Staff_add.jpg" />
+						<ul class="body_ul">
+							<li>管理</li>
+							<li>
+								<h6>互联网时代，管理更高效</h6></li>
+						</ul>
+					</div>
+					<div class="left">
+						<img src="img/banner1.jpg" />
+						<ul class="body_ul">
+							<li>工作与休闲</li>
+							<li>
+								<h6>工作休闲两不误，人生更精彩~</h6></li>
+						</ul>
+					</div>
+				</div>
+				<div id="body_right_up_check">
+					考勤细则
+				</div>
+				<div class="top2_photo">
+					责任到岗的原则。按照“谁考勤谁公开，谁公开谁负责”的要求，负责本学院及所属点点幼儿园信息公开工作。建立信息公开责任制，建立健全信息公开制度体系。真实、准确、及时的原则。确保公开的信息内容真实、数据准确、公开及时，不得有虚假记载、误导性陈述，或者重大遗漏.
+				</div>
+			</div>
+			<div id="body_right_middle">
+				<div class="body_right_middle">
+					<div class="body_right_middle_top1 active">
+						<a>学院动态</a>
+					</div>
+					<div class="body_right_middle_top2 ">
+						<a>职工动态</a>
+					</div>
+				</div>
+				<div id="">
+					<div class="middle_item" style="display: block;">
+					</div>
+					<div class="middle_item" style="display: none;">
+					</div>
+				</div>
+			</div>
+			<div id="body_right_right">
+				<!--contenteditable="true" div可编辑-->
+				<div contenteditable="true" class="body_bottom_right_txt" id="body_bottom_right_txt">hi，发一句心情吧~<img src="img/chiya.gif" /></div>
+				<!--提交表单，用户留言存储入数据库-->
+				<form action="MsgAdd" method="post">
+					<!--此下标签起一个数据转换作用-->
+					<input type="text" class="Txt" name="Txt" style="display: none;" />
+					<input type="text" class="DateTime" name="DateTime" id="DateTime" style="display: none;" />
+					<input type="submit" value="发表" class="pu" />
+					<input type="button" value="添加表情" class="biaoqing" />
+				</form>
+				<div class="photo" style="display: none;">
+					<img src="img/weixiao.gif" />
+					<img src="img/wuzuixiao.gif" />
+					<img src="img/chiya.gif" />
+					<img src="img/daxiao.gif" />
+					<img src="img/deyi.gif" />
+					<img src="img/kenai.gif" />
+					<img src="img/kun.gif" />
+					<img src="img/se.gif" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/Language.js" ></script>
+</html>

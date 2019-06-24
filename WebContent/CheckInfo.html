@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/CheckInfo.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<title>加班/休假查询</title>
+		<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+		<script type="text/javascript" src="js/CheckInfo.js"></script>
+	</head>
+
+	<body>
+		<div class="nack">
+			<div class="nack_center">				
+				<div class="nack_center_left">
+					<img src="img/Staff_logo.png" />
+				</div>
+				<div class="nack_center_right_top">
+					<div class="nack_center_right_top_left">
+							<ul >
+									<li>综合</li>
+									<li class="Background-color">换肤</li>
+									<li><a name="StranLink" id="StranLink">繁體</a></li>
+									<li><input type="text" style="border: 0;" id="select"/></li>
+									<li><input type="button"value="搜索一下" id="btn"></li>
+								</ul>
+								<ol id="ol" >
+								</ol>
+					</div>
+					<div class="nack_center_right_top_right">
+						
+					</div>
+				</div>
+				<div class="nack_center_right_down">
+					<div class="nack_center_item"><strong><a href="Staff.html">首页</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">关于学院</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">新闻中心</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">职工管理</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Payroll.html">人才发展</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">学院责任</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Payroll.html">信息公开</a></strong></div>
+				</div>
+			</div>
+		</div>
+		<div class="head">
+			<img src="img/Updata.jpg" />
+		</div>
+		<div class="body">
+			<div class="body_body">
+				<div class="left">
+					<div class="left_top">
+						<div class="left_top_top">
+							<a>薪资须知</a>
+						</div>
+						<div class="left_top_bottom">
+							<div class="item itemadd">□&#12288以实际发放为准</div>
+							<div class="item">□&#12288考勤咨询人事部</div>
+							<div class="item">□&#12288变动部门有效一年</div>
+							<div class="item">□&#12288五险一金正常进行</div>
+							<div class="item">□&#12288岗位薪资取其平均</div>
+							<div class="item">□&#12288有问题逐级报告</div>
+							<div class="item">□&#12288联系我们</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right_top">
+						<div class="right_top_left">
+							<a>个人考勤一览表</a>
+						</div>
+						<div class="right_top_right">
+							<a href="Staff.html">首页</a>-
+							<a href="CheckInfo.html">关于个人考勤</a>-
+							<a href="Payroll.html">薪资指南</a>
+						</div>
+					</div>
+					<div class="right_bottom">
+						<div class="biaoti">
+							<strong>个人工资条详情</strong>
+						</div>
+						<div id="">
+							<table class="table">
+								<tr>
+									<th>
+                                        <span class="glyphicon glyphicon-user"></span> 职工号
+									</th>
+									<th id="StaffNum"></th>
+								</tr>
+								<tr>
+									<td>
+										基础工资：</td>
+									<td id="Payroll"></td>
+								</tr>
+								<tr>
+									<td>奖金：</td>
+									<td id="Bonus"></td>
+								</tr>
+								<tr>
+									<td>扣款：</td>
+									<td id="Deduction"></td>
+								</tr>
+								<tr>
+									<td>合计：</td>
+									<td id="add"></td>
+								</tr>
+								<tr>
+									<td>大写：</td>
+									<td id="ADD"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div id="img">
+						<img src="img/CheckInfo_goucheng1.png" width="420px" height="330px" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/Language.js"></script> <!--简繁体一键切换代码实现 -->
+<script type="text/javascript" src="js/Select1.js"></script> <!--顶部搜索栏代码实现 -->
+<script type="text/javascript" src="js/Background-color.js" ></script><!--简单切换背景色-->
+</html>

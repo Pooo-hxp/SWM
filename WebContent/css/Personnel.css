@@ -1,0 +1,264 @@
+ul li{
+	list-style: none;
+}
+.top {
+	margin: 0 auto;
+	width: 1120px;
+	height: 70px;
+	/*background: gray;*/
+	cursor:pointer;  /*鼠标指针样式设置*/
+}
+
+.top_left {
+	float: left;
+	width: 200px;
+	height: 100%;
+}
+
+.top_center {
+	float: left;
+	margin: -16px auto;
+}
+
+.top_center ul li {
+	/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+	list-style: none;
+	height: 70px;
+	width: 120px;
+	float: left;
+}
+
+.top_center ul li a{
+	text-decoration: none;
+}
+
+.top_center ul li:hover {
+	background: #008000;
+	color: white;
+}
+
+.top_right {
+	float: left;
+	border-left: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+.top_right_shezhi a:hover {
+	color: #0000FF;
+}
+
+.top_right_tuichu a :hover {
+	color: red;
+}
+
+.top_right div {
+	/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+	float: right;
+	width: 59px;
+	height: 70px;
+}
+
+.banner {
+	margin: 0 auto;
+	width: 1120px;
+	height: 70px;
+	background: url(../img/bg_index_top.png);
+}
+
+.banner_div {
+	float: right;
+	width: 760px;
+	height: 50px;
+}
+
+.banner_item {
+	position: absolute;
+	width: 760px;
+	height: 50px;
+	display: none;
+	background: grey;
+}
+
+.banner_item div {
+	/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+	width: 20%;
+	height: 100%;
+	float: left;
+	color: white;
+}
+#body{
+	margin: 0 auto;
+	width: 1120PX;
+	height:872PX;
+}
+#body_left{
+	float: left;
+	width: 210px;
+	height: 872px;
+	border: 1px solid #D7D7D7;
+	color: #444;
+	padding-top: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#body_left p{
+		/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+	height: 50px;
+	width: 210px;
+	border-radius: 10px;
+	background: rgba(200, 200, 200, 0.5);
+}
+#body_left p:hover{
+	cursor: pointer;
+	background: rgba(100, 100,100, 0.6);
+	color: white;
+}
+#body_right_up{
+	float: left;
+	margin-left: 10px;
+	width: 896px;
+	height: 280px;
+	border: 1px solid #D7D7D7;
+	color: #444;
+}
+#body_right_up_head{
+	margin-left: 180px;
+	margin-top: -10px;
+	text-align: center;
+	width: 406px;
+	color: green;
+}
+#body_right_up_head p{
+	margin-top: -10px;
+}
+#body_right_up_nack{
+	margin-left: 10px;
+	width: 896px;
+	height: 110px;
+}
+.left {
+	float: left;
+	width: 440px;
+	height: 110px; 
+}
+.left img{
+	float: left;
+  width: 200px;
+  height: 100px;
+}
+.body_ul{
+	margin-left: 15px;
+	float: left;
+}
+.body_ul  li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#body_right_middle{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 580px;
+	width: 550px;
+	border: 1px solid #D7D7D7;
+	color: #444;
+}
+.body_right_middle a:hover{
+	color: #0086c8;
+}
+.body_right_middle{
+	width: 550px;
+	height: 30px;
+	border-bottom: 1px solid #D7D7D7;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.1);
+}
+.Staff{
+	border-bottom:  1px solid black;
+	padding: 20px;
+}
+.Staff_p{
+	margin-left: 300px;
+	height: 25px;
+	width: 180px;
+}
+.active{
+	color: #0086c8;
+	border-bottom: 2px solid #0086c8;	
+}
+.body_right_middle_top1{
+	margin-left: 30px;
+	float: left;
+	height: 30px;
+	padding: 5px;
+	cursor: pointer;	
+    box-sizing: border-box;
+}
+.body_right_middle_top2{
+	margin-left: 15px;
+	float: left;
+	height: 30px;
+	cursor: pointer;
+	text-align: center;
+	box-sizing: border-box;  
+	padding: 5px;
+	width: 100px;
+	border-left: 1px solid darkgray;
+}
+.middle_item{
+	position: absolute;
+	/*background: pink;*/
+	width: 550px;
+	height: 550px;
+	padding: 20px;
+	overflow-y: scroll;	
+	box-sizing: border-box;
+}
+#body_right_right{
+	float: right;
+	margin-top: 10px;
+	height: 580px;
+	width: 320px;
+	border: 1px solid #D7D7D7;
+	color: #444;
+	padding: 20px;
+	box-sizing: border-box;
+	/*background: lightskyblue;*/
+}
+.body_bottom_right_txt{
+	padding: 20px;
+	border: 1px solid black;
+}
+#body_right_up_check{
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	width: 770px;
+	height: 20px;
+}
+.top2_photo{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 870px;
+	height:80px;
+}

@@ -1,0 +1,14 @@
+$(function(){
+	$.ajax({
+		dataType:"json",
+		type:"post",
+		url:"StaffInfoServlet",
+		success:function(data){
+		$("#StaffNum").html(data["StaffNum"]);
+		$("#StaffName").html(data["StaffName"]);
+		$("#DeptNum").html(data["DeptNum"]);
+		$("#StaffJob").html(data["StaffJob"]);
+		$("#IDNum").html(data["IDNum"]);
+		}
+	})
+})

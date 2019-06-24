@@ -1,0 +1,150 @@
+html,body{
+    height:100%;
+}
+body,ul,li,a,p,div{padding:0px; margin:0px;}
+ul li{list-style: none;}
+.nack{
+	margin-left: 800px;
+	font-family: "微软雅黑";
+	font-size: 35px;
+}
+#wrap{
+    overflow: hidden;
+    width:100%;
+}
+#main{
+    height:2944px;
+    top:0;
+    position: relative;
+}
+.page{
+    width:100%;
+    margin:0;
+}
+#top{
+    background:url(../img/BankList1.jpg)center 0 ;
+}
+.top_top{
+	top: 0;
+	height: 100px;
+	width: 100%;
+	background: url(../img/bg_index_top.png);
+}
+.top_top img{
+	float: left;
+	margin-left: 150px;
+	width: 180px;
+	height: 100px;
+}
+.top_top div{
+	width: 180px;
+	height: 100px;
+	margin-left: 100px;
+	float: left;
+	/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center; /*交叉轴对齐*/
+	/*实现水平居中*/
+	justify-content: center;
+
+}
+.top_top a{
+	font-size: 20px;
+	font-weight: 400;	
+	text-decoration: none;
+}
+.top_top div:hover{
+	background: #008000;
+}
+.top_bottom_text{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+}
+.list2{
+	margin-top: 100px;
+	text-align: center;
+}
+#middle{
+    background:url(../img/BankList3.jpg);
+    overflow-y: scroll;
+}
+.middle_left{
+	width: 10px;
+	height: 40px;
+	background: red;
+	float: left;
+	animation: anim2 10s infinite alternate;
+	-webkit-animation: anim2 10s infinite alternate;
+}
+@keyframes  anim2{
+		0%{background: red;margin-top: 0px;}
+		/*25%{background: blue;margin-top: 500px;}*/
+		50%{background: green;margin-top: 950px;}
+		/*75%{background: green;margin-top: 500px;}*/
+		100%{background: green;margin-top: 0px;}
+
+	}
+.middle_middle{
+		width: 98%;
+		height: 900px;
+		float: left;
+	}
+.middle_right{
+	width: 10px;
+	height: 40px;
+	background: #0086C8;
+	float: left;
+	animation: anim3 10s infinite alternate;
+	-webkit-animation: anim3 10s infinite alternate;
+}
+@keyframes  anim3{
+		0%{background: red;margin-top: 0px;}
+		/*25%{background: blue;margin-top: 500px;}*/
+		50%{background: green;margin-top: 950px;}
+		/*75%{background: green;margin-top: 500px;}*/
+		100%{background: green;margin-top: 0px;}
+
+	}
+#bottom{
+    background:url(../img/BankList2.jpg);
+}
+.bottom_bottom{
+	width: 1500px;
+	height: 800px;
+	margin: 0 auto;
+	/*background: red;*/
+}
+.img{
+	width: 70px;
+	height: 350px;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 80px 12px;
+}
+.img img{
+	display: none;
+}
+.act{
+	width: 350px;
+	height: 350px;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	line-height: 70px;
+	margin: 80px 12px;
+	background: white;
+	opacity: 0.2;
+}
+.add{
+	width: 1300px;
+	height: 200px;
+	float: left;
+	padding: 20px;
+	margin: 0px 10px;
+	background: #12B7F5;
+	opacity: 0.5;
+}

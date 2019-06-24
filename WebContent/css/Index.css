@@ -1,0 +1,61 @@
+* {
+	text-align: center;
+}
+
+body {
+	background-color: whitesmoke;
+}
+
+div {
+	font-family: "微软雅黑";
+	color: darkgray;
+	font-size: 18px;
+}
+
+#accordion {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 5px double lightblue;
+
+}
+
+.header {
+	/* color: rgba(196, 178, 218, 0.431); */
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 2px 2px 2px darkgray, 2px 2px 2px royalblue;
+}
+
+.check_code {
+	color: blue;
+	background: linear-gradient(to left, pink, skyblue);
+}
+
+.out {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 300px;
+	height: 20px;
+	border: 2px solid blue;
+	border-radius: 10px;
+	overflow: hidden;
+	/* 超出部分隐藏 */
+	display: none;
+}
+
+.inner {
+	height: 20px;
+	width: 0;
+	/*进度条初始我给设为零*/
+	background: linear-gradient(to left, red, pink, skyblue)
+}
+
+.span {
+	color: black;
+	font-size: 18px;
+	line-height: 20px;
+	position: absolute;
+	left: 50%;
+}

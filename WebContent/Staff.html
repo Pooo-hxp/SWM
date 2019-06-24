@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Staff.css" />
+		<title>员工首页</title>
+		<script src="js/jquery.1.7.2.js"></script>
+		<script type="text/javascript" src="js/Staff.js"></script>
+	</head>
+
+	<body>
+		<div class="body">
+			<div class="top">logo</div>
+			<div class="top_down">
+				<ul>
+					<li>
+						<a href="Staff.html">首页</a>
+					</li>
+					<li>
+						<a href="StaffInfo.html">职工个人信息</a>
+					</li>
+					<li>
+						<a href="CheckInfo.html">加班/休假查询</a>
+					</li>
+					<li>
+						<a href="help.html">帮助</a>
+					</li>
+				</ul>
+			</div>
+			<div class="banner">
+				<ul id="it">
+					<li class="item" style="display: block;">
+						<img src="img/Staff_banner.jpg" />
+					</li>
+					<li class="item" style="display:none;">
+						<img src="img/Staff_banner2.jpg" />
+					</li>
+					<li class="item" style="display: none;">
+						<img src="img/Staff_banner3.jpg" />
+					</li>
+					<li class="item" style="display: none;">
+						<img src="img/Staff_banner4.jpg" />
+					</li>
+				</ul>
+				<div class="lr-table">
+					<div class="left_btn"></div>
+					<div class="right_btn"></div>
+				</div>
+			</div>
+			<div class="add">
+				<img src="img/Staff_add.jpg" />
+			</div>
+			<div class="body_bottom_left">
+				<marquee direction="up" 
+									         height="580px"
+									         width="250px"
+									         onmouseover="this.stop()"
+										     onmouseout="this.start()"
+									         scrollamount="4">
+								    <p>各单位：</p>
+									<p>本周四下午的政治学习主要包含以下三方面的内容：</p>
+									<p>1.继续深入学习贯彻全国教育大会精神。全面贯彻学习全国教育大会精神，
+									将成为当前和今后一段时间我校政治学习的重要内容。</p><p>本周四下午的政治学习，
+									请各单位结合中共河南省委书记王国生署名文章“在坚守和奉献中成就出彩人生——张玉滚同志先进事迹的精神内涵和时代价值”（附件1）</p>
+									<p>
+									深入学习不久前被中宣部授予“时代楷模”荣誉称号的河南省镇平县高丘镇黑虎庙小学教师张玉滚的先进事迹。</p>
+									<p>2.认真贯彻学习双代会校领导讲话精神。
+									11月29日，我校第一届教职工暨工会会员代表大会第一次会议胜利召开。
+									会上，吴校长的报告《以迎评促建为契机，持续深化内涵建设，
+									为把我校建成有特色高质量的商科类应用型高校而努力奋斗》</p>
+									<p>（附件2）对我校2018年以来的工作作了全面回顾，对2019年的重点工作作了全面部署和安排。
+									请各单位结合自身工作，认真学习，深入贯彻，奋力完成学校各项工作任务，共迎学校事业发展新篇章。</p>
+									<p>3.继续加强对评估知识的学习。根据《学校评估知识学习与培训实施方案》，本周政治学习内容为《政策信息参考》第31、32、33期（附件3、4、5）。</p>
+								    <p>继郑州轻工业学院更名为郑州轻工业大学后，河南又一高校“成功”更名 —— 经教育部批准，郑州成功财经学院更名为郑州商学院。</p>
+									<p>据了解，郑州商学院（原郑州成功财经学院）现有工商管理学院、会计学院、国际经济与贸易学院、外国语学院、信息与机电工程学院、艺术学院、文学与新闻传播学院、建
+									 筑工程学院、通识教育中心、马克思主义学院、体育部等11个教学单位，58个本专科专业。</p>
+									<p>曾荣获中国最具办学特色本科高校、全国教育改革创新示范院校、中国高等教育十佳特色学校、河南省最具社会影响力高校、
+									河南省最具综合实力高校、河南省高等教育教学工作先进集体等多项省级以上荣誉，并五次被河南省教育厅评为“河南省优秀民办学校”。</p>
+									</marquee>
+			</div>
+			<div class="body_bottom_middle">
+				<div class="body_right_middle">
+					<div class="body_right_middle_top1 active">
+						<a>学院动态</a>
+					</div>
+					<div class="body_right_middle_top2 ">
+						<a>职工动态</a>
+					</div>
+				</div>
+				<div id="">
+					<div class="middle_item" style="display: block;">
+					</div>
+					<div class="middle_item" style="display: none;">
+					</div>
+				</div>
+			</div>
+			<div class="body_bottom_right">
+				<!--contenteditable="true" div可编辑-->
+				<div contenteditable="true" class="body_bottom_right_txt" id="body_bottom_right_txt">hi，发一句心情吧~<img src="img/chiya.gif" /></div>
+				<!--提交表单，用户留言存储入数据库-->
+				<form action="MsgAdd" method="post">
+					<!--此下标签起一个数据转换作用-->
+					<input type="text" class="Txt" name="Txt" style="display: none;" />
+					<input type="text" class="DateTime" name="DateTime" id="DateTime" style="display: none;" />
+					<input type="submit" value="发表" class="pu" />
+					<input type="button" value="添加表情" class="biaoqing" />
+				</form>
+
+				<div class="photo" style="display: none;">
+					<img src="img/weixiao.gif" />
+					<img src="img/wuzuixiao.gif" />
+					<img src="img/chiya.gif" />
+					<img src="img/daxiao.gif" />
+					<img src="img/deyi.gif" />
+					<img src="img/kenai.gif" />
+					<img src="img/kun.gif" />
+					<img src="img/se.gif" />
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>

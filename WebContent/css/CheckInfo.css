@@ -1,0 +1,166 @@
+.head{
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+}
+.nack{
+	position: relative;
+	height: 130px;
+	width: 100%;
+	background-color:rgba(255, 255, 255, 0.6);
+	z-index: 1;
+}
+.nack_center{
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+.nack_center_item{
+	text-align: center;
+	float:left;
+	width: 80px;
+	margin-left: 15px;
+	line-height: 60px;
+}
+.nack_center_item a{
+	color: black;
+
+}
+.nack_center_left img{
+	float: left;
+	margin-left: -200px;
+	width: 250px;
+	height: 130px;
+}
+.nack_center_right_top{
+	float: right;
+	width: 500px;
+	height: 50%;
+
+}
+.nack_center_right_top_left ul li{
+	list-style: none;
+	float: left;
+	color: dimgray;
+	font-size: 13px;
+	margin-top: 25px;
+	margin-left: 9px;
+}
+ul li:hover{
+	cursor: pointer; /*改变光标样式*/
+	background-color: #f99d32;
+	color: black;
+}
+.nack_center_right_down{
+	float: right;
+	width: 700px;
+	height: 50%;
+	/*background: green;*/
+}
+.body{
+	position: absolute;
+	top: 299px;
+	width: 100%;
+	height: 100%;
+	background: #E5E5E5;
+}
+.body_body{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 60%;
+	height: 100%;
+}
+.left{
+	float: left;
+	width: 20%;
+	height: 80%;
+}
+.left_top{
+	width: 100%;
+	height: 50px;
+	margin-top: -15px;
+	border-bottom: 1px solid gainsboro;
+}
+.left_top_top{
+	margin-top: 20px;
+	font-size:28px;
+	color: #f99d33;
+}
+.item{
+	line-height: 50px;
+	height: 50px;
+	font-size: 15px;
+	border-bottom: 1px solid gainsboro;
+}
+.item:hover{
+	background-color: #f99d32;
+	opacity: 1;
+	color: #fff;
+	cursor: pointer; /*改变光标为小手*/
+}
+.itemadd{
+	margin-top: 15px;
+	/*opacity: 0.8;*/
+}
+.right{
+	float: right;
+	width: 70%;
+	height: 80%;
+}
+.right_top{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid gainsboro;
+}
+.right_top_left{
+	margin-top: 10px;
+	font-size:28px;
+	float: left;
+	color: #f99d33;
+}
+.right_top_right{
+	margin-top: 20px;
+	float: right;
+}
+.biaoti{
+	margin-top: 30px;
+	font-size: 22px;
+	width: 100%;
+	text-align: center;
+}
+.end{
+	float: right;
+}
+#img{
+	text-align: center;
+	background: #E5E5E5;
+}
+.please{
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+#ol{
+
+	position: absolute;  /* ul相对父盒子定位 */
+	top: 55px;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	list-style: none; 
+	width: 458px;
+	text-align: center;
+	padding: 0px;
+	/* background: #f7f5f4; */
+	background: darkcyan;
+	/* display: none; */
+	cursor: pointer;
+
+}
+#ol a{
+color: #f7f5f4;
+}
+#ol  :hover{
+background: green;
+}

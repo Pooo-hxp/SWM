@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Index.css" />
+		<title>登录页面</title>
+		<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+
+	</head>
+
+	<body>
+		<div class="header"><h1>工资系统登录窗口</h1></div><br><br>
+		<div id="accordion">
+			<h2>登录窗口</h2>
+			<hr>
+			<form action="indexServlet" method="post" onsubmit="return validate()">
+				<p>账号:
+					<input type="text" name="StaffNum" />
+				</p>
+				<p>密码:
+					<input type="password" name="PassWord" />
+				</p>
+				<p>
+					<a for="code_input">验证码:&nbsp;</a>
+					<input type="text" id="code_input" maxlength="5" style="width: 150px;" placeholder="不区分大小写" />
+					<input type="button" id="check_idcode" class="check_code" onclick="createCode()" />
+				</p>
+				<input type="submit" value="登录" />
+			</form>
+			<div class="out">
+				<div class="inner">
+					<span class="span">0%</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/Index.js"></script>
+
+</html>

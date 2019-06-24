@@ -1,0 +1,24 @@
+#box{
+		padding: 40px;
+		margin: 50px auto;
+	    width:900px;
+		height: 500px;
+		word-wrap: break-word;
+		word-break: break-all;
+		border-bottom-right-radius: 50px;
+		border-bottom-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		background-color: rgba(255,255,255,0.6);
+	}
+	p{
+	  text-indent: 4em;
+	}
+body{
+	background: url(../img/help.jpg);
+	background-repeat: no-repeat;
+	background-size:100% 130%;
+}
+h1{
+	text-align: center;
+}

@@ -1,0 +1,111 @@
+a{
+	text-decoration: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	/*color: #fff;*/
+	font-size: 50px;
+	line-height: 80px;
+	font-weight: 300;
+}
+.body_on{
+	width: 100%;
+	height: 800px;
+	/*text-align: center;*/
+}
+.body_onadd{
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	line-height: 80px;	
+    box-shadow: 5px 5px 5px 5px gray;
+	background:url(../img/bg_index_top.png);l
+}
+.body_on_on{
+	background: url(../img/Financeon.jpg);
+	width: 100%;
+	height: 900px;
+}
+
+.body_on_top{
+	margin: 0 auto;
+	width: 1300px;
+	height: 80px;
+}
+.body_on_top2{
+	text-align: center;
+	margin-left: 460px;
+	margin-top: 20px;
+	width: 800px;
+	height: 150px;
+
+}
+.body_on_top2 a{
+	font-weight: 300;
+	
+}
+.body_on_top3 img{
+	margin-left: 430px;
+	margin-top:30px;
+}
+.body_onlist{
+	/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+	float: left;
+	margin-left: 20px;	
+	width: 80px;
+	height: 80px;
+}
+.body_onlist a:hover{
+	background: #12b7f5;
+}
+.add{
+	background: #12b7f5;
+}
+.body_onlist2{
+	/*flex 布局*/
+	display: flex;
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+	float: right;
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 120px;
+	height: 60px;
+}
+.add2{
+	/*border: 1px solid red;*/
+	border-radius:40px;
+	background: #12b7f5;
+}
+.body_middle {
+	min-height: 500px;/*设置其元素最小高度*/
+	background-image: url(../img/Financebg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat; /*避免背景图重复*/
+	background-attachment: fixed; /*固定背景图.当页面的其余部分滚动时，背景图像不移动。*/
+	/*background-size: cover;*/
+}
+
+.body_bottom{
+	background: url(../img/Finance..jpg);
+	font-size: 45px;
+	width: 100%;
+	height: 1050px;
+	text-align: center;
+}
+.body_bottom p {
+	position: relative;
+	top: 100px;
+	left: 1000px;
+	width: 30%;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Updata.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<title>调动申请</title>
+		<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+		<script type="text/javascript" src="js/Updata.js"></script>
+	</head>
+	<body>
+		<div class="nack">
+			<div class="nack_center">				
+				<div class="nack_center_left">
+					<img src="img/Staff_logo.png" />
+				</div>
+				<div class="nack_center_right_top">
+					<div class="nack_center_right_top_left">
+							<ul >
+									<li>综合</li>
+									<li class="Background-color">换肤</li>
+									<li><a name="StranLink" id="StranLink">繁體</a></li>
+									<li><input type="text" style="border: 0;" id="select"/></li>
+									<li><input type="button"value="搜索一下" id="btn"></li>
+								</ul>
+								<ol id="ol" >
+								</ol>
+					</div>
+					<div class="nack_center_right_top_right">
+						
+					</div>
+				</div>
+				<div class="nack_center_right_down">
+					<div class="nack_center_item"><strong><a href="Staff.html">首页</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">关于学院</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">新闻中心</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">职工管理</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Payroll.html">人才发展</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">学院责任</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Payroll.html">信息公开</a></strong></div>
+				</div>
+			</div>
+		</div>
+		<div class="head">
+			<img src="img/Updata.jpg" />
+		</div>
+		<div class="body">
+			<div class="body_body">
+				<div class="left">
+					<div class="left_top">
+						<div class="left_top_top">
+							<a>变动须知</a>
+						</div>
+						<div class="left_top_bottom">
+							<div class="item itemadd">□&#12288部门申请不可撤销</div>
+							<div class="item">□&#12288部门申请数目唯一</div>
+							<div class="item">□&#12288岗位按需进行分配</div>
+							<div class="item">□&#12288变动部门有效一年</div>
+							<div class="item">□&#12288五险一金正常进行</div>
+							<div class="item">□&#12288岗位薪资取其平均</div>
+							<div class="item">□&#12288有问题逐级报告</div>
+							<div class="item">□&#12288联系我们</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right_top">
+						<div class="right_top_left">
+							<a>部门申请变动指南</a>
+						</div>
+						<div class="right_top_right">
+							<a href="Staff.html">首页</a>-
+							<a href="Updata.html">关于部门申请</a>-
+							<a href="Payroll.html">薪资指南</a>
+						</div>
+					</div>
+					<div class="right_bottom">
+						<div class="biaoti">
+							<strong>郑州商学院职工申请部门调动管理总则</strong>
+						</div>
+						<div class="tex">
+							<p>部门变动信息公开遵循原则</p>
+							<p>（一）依法合规的原则。严格遵循学院、系别和相关规定，建立郑州商学院健全信息公开制度体系，推动信息公开工作制度化、规范化。信息公开应当以保障职工和学院公共利益安全、严格保守私人信息与商业秘密为前提，依法界定本人申请部门变动公开（豁免公开）信息范围和内容，根据系别情况不同类型，依规则确定信息公开的方式和程序。</p>
+							<p>（二）真实、准确、及时的原则。确保公开的信息内容真实、数据准确、公开及时，不得有虚假记载、误导性陈述，或者重大遗漏。</p>
+							<p>（三）积极回应同事关切的原则。立足回应系部机构、公众等各方面关切。</p>
+							<p>（四）分配到岗的原则。按照“谁申请调动谁公开，谁公开谁负责”的要求，建立信息公开责任制，建立健全信息公开制度体系。信息公开不得损害个人和学院合法权益、经营安全，影响社会稳定</p>
+						</div>
+						<div class="end">
+							——内容来自《郑州商学院职工部门调动守则》
+						</div>
+						<div class="please" id="please">
+							<form action="changeServlet" method="post">
+								<table class="table table-hover">
+									<tr>
+										<td>
+											<a href="#"><span class="glyphicon glyphicon-user">职工号</span></a>
+										</td>
+										<td><input type="text" name="StaffNum" id="StaffNum" value="000022" readonly="true" /></td>
+									</tr>
+									<tr>
+										<td>原部门号</td>
+										<td><input type="text" name="DeptName" id="DeptName" value="机械系" readonly="true" /></td>
+									</tr>
+									<tr>
+										<tr>
+											<td>变动部门号</td>
+											<td>
+												<select name="ChangeName" style="width:180px;height:26px;">
+													<option value="信工系">信工系</option>
+													<option value="会计系">会计系</option>
+													<option value="外语系">外语系</option>
+													<option value="机械系">机械系</option>
+													<option value="中文系">中文系</option>
+													<option >都不是</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td>变动关键词</td>
+											<td>
+												<select name="Change" style="width:180px;height: 26px;">
+													<option value="调入">调入</option>
+													<option value="调出">调出</option>
+													<option value="离职">离职</option>
+												</select>
+											</td>
+										</tr>
+								</table>
+								<input type="checkbox" />已阅读且遵守学院规则<br />
+								<input type="submit" value="提交申请" />
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/Language.js"></script> <!--简繁体一键切换代码实现 -->
+<script type="text/javascript" src="js/Select1.js"></script> <!--顶部搜索栏代码实现 -->
+<script type="text/javascript" src="js/Background-color.js" ></script><!--简单切换背景色-->
+</html>

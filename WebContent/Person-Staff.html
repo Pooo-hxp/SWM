@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Person-Staff.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<title>所有职工信息查询</title>
+		<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+		<script type="text/javascript" src="js/Background-color.js" ></script>
+		<script type="text/javascript" src="js/Person-Staff.js"></script>
+	</head>
+	<body>
+		<div class="nack">
+			<div class="nack_center">				
+				<div class="nack_center_left">
+					<img src="img/Personnel.png" />
+				</div>
+				<div class="nack_center_right_top">
+					<div class="nack_center_right_top_left">
+						<ul>
+							<li>综合</li>
+							<li class="Background-color">换肤</li>
+							<li><a name="StranLink" id="StranLink">繁體</a></li>
+							<li><input type="text" style="border: 0;" id="select"/></li>
+							<li><input type="button"value="搜索一下" id="btn"></li>
+						</ul>
+						<ol id="ol"></ol>
+					</div>
+					<div class="nack_center_right_top_right">
+						
+					</div>
+				</div>
+				<div class="nack_center_right_down">
+					<div class="nack_center_item"><strong><a href="Personnel.html">首页</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">关于学院</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">新闻中心</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Person-Staff.html">职工管理</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Person-Payroll.html">人才发展</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">学院责任</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Person-Payroll.html">信息公开</a></strong></div>
+				</div>
+			</div>
+		</div>
+		<div class="head">
+			<img src="img/Updata.jpg" />
+		</div>
+		<div class="body">
+			<div class="body_body">
+				<div class="left">
+					<div class="left_top">
+						<div class="left_top_top">
+							<a>信息公开</a>
+						</div>
+						<div class="left_top_bottom">
+							<div class="item itemadd">□&#12288信息必须规范输出</div>
+							<div class="item">□&#12288信息变动后台提交</div>
+							<div class="item">□&#12288职工信息不可外泄</div>
+							<div class="item">□&#12288管理人员查漏补缺</div>
+							<div class="item">□&#12288个人隐私不可私聊</div>
+							<div class="item">□&#12288有问题逐级报告</div>
+							<div class="item">□&#12288联系我们</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right_top">
+						<div class="right_top_left">
+							<a>职工信息一览表</a>
+						</div>
+						<div class="right_top_right">
+							<a href="Personnel.html">首页</a>-
+							<a href="Person-Staff.html">关于职工信息</a>-
+							<a href="Person-Check.html">考勤审批</a>-
+							<a href="Person-Updata.html">申请审批</a>
+						</div>
+					</div>
+					<div class="right_bottom">
+						<div class="biaoti">
+							<strong>员工信息</strong>
+						</div>
+						<div class="info">
+							<table class="table  table-bordered table-hover">
+								<tr >
+									<th class="text-primary"><span class="glyphicon glyphicon-user"></span>职工号</th>
+									<th class="text-primary">职工名</th>
+									<th class="text-primary">性别</th>
+									<th class="text-primary">职称</th>
+									<th class="text-primary">身份证号</th>
+									<th class="text-primary">部门号</th>
+									<th class="text-primary">部门名</th>
+								</tr>
+								<tbody id="tbody">							
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/Language.js" ></script>
+<script type="text/javascript" src="js/Select.js"></script>
+</html>

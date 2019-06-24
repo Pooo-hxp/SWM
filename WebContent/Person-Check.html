@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Person-Check.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<title>人事部职工考勤</title>
+		<script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+		<script type="text/javascript" src="js/Person-Check.js"></script>
+	</head>
+	<body>
+		<div class="nack">
+			<div class="nack_center">				
+				<div class="nack_center_left">
+					<img src="img/Personnel.png" />
+				</div>
+				<div class="nack_center_right_top">
+					<div class="nack_center_right_top_left">
+						<ul>
+							<li>综合</li>
+							<li class="Background-color">换肤</li>
+							<li><a name="StranLink" id="StranLink">繁體</a></li>
+							<li><input type="text" style="border: 0;" id="select"/></li>
+							<li><input type="button"value="搜索一下" id="btn"></li>
+						</ul>
+						<ol id="ol" >
+						</ol>
+						</ul>
+					</div>
+					<div class="nack_center_right_top_right">
+						
+					</div>
+				</div>
+				<div class="nack_center_right_down">
+					<div class="nack_center_item"><strong><a href="Personnel.html">首页</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">关于学院</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">新闻中心</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">职工管理</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Person-Payroll.html">人才发展</a></strong></div>
+					<div class="nack_center_item"><strong><a href="#">学院责任</a></strong></div>
+					<div class="nack_center_item"><strong><a href="Person-Payroll.html">信息公开</a></strong></div>
+				</div>
+			</div>
+		</div>
+		<div class="head">
+			<img src="img/Updata.jpg" />
+		</div>
+		<div class="body">
+			<div class="body_body">
+				<div class="left">
+					<div class="left_top">
+						<div class="left_top_top">
+							<a>更改须知</a>
+						</div>
+						<div class="left_top_bottom">
+							<div class="item itemadd">□&#12288以实际发放为准</div>
+							<div class="item">□&#12288人事部考勤财政沟通</div>
+							<div class="item">□&#12288考勤情况公开公正</div>
+							<div class="item">□&#12288五险一金不在表内</div>
+							<div class="item">□&#12288岗位薪资不许变动</div>
+							<div class="item">□&#12288有问题逐级报告</div>
+							<div class="item">□&#12288联系我们</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right_top">
+						<div class="right_top_left">
+							<a>职工考勤信息一览表</a>
+						</div>
+						<div class="right_top_right">
+							<a href="Personnel.html">首页</a>-
+							<a href="Person-Check.html">关于考勤审批</a>-
+							<a href="Person-Updata.html">部门申请审批</a>
+						</div>
+					</div>
+					<div class="right_bottom">
+						<div class="biaoti">
+							<strong>考勤与薪资</strong>
+						</div>
+						<div class="info">
+							<table class="table  table-bordered table-hover">
+								<tr >
+									<th class="text-primary"><span class="glyphicon glyphicon-user"></span>职工号</th>
+									<th class="text-primary">休假</th>
+									<th class="text-primary">加班</th>
+									<th class="text-primary">职称底薪</th>
+									<th class="text-primary">总工资</th>
+								</tr>
+								<tbody id="tbody">
+								
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/Language.js"></script> <!--简繁体一键切换代码实现 -->
+<script type="text/javascript" src="js/Select.js"></script> <!--顶部搜索栏代码实现 -->
+<script type="text/javascript" src="js/Background-color.js" ></script><!--简单切换背景色-->
+</html>

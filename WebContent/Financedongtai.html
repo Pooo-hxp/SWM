@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Financedongtai.css" />
+		<title>留言板</title>
+		<script type="text/javascript" src="js/jquery.1.7.2.js" ></script>
+		<script type="text/javascript" src="js/Financedongtai.js" ></script>
+	</head>
+	<body>
+		<div class="head">
+				<div class="body_on_top">
+				<div style="float: left;"><img src="img/财政部logo.png" width="120px"height="80px"/></div>
+				<div class="body_onlist add"><a href="Finance.html">首页</a></div>
+				<div class="body_onlist"><a href="Financedongtai.html">动态</a></div>
+				<div class="body_onlist"><a href="BankList.html">银行条</a></div>
+				
+				<div class="body_onlist2 "><a href="">职工薪资</a></div>
+				<div class="body_onlist2"><a name="StranLink" id="StranLink">繁體</a></div>
+				<div class="body_onlist2 add2"><a href="">抢楼</a></div>
+			</div>
+		</div>
+		<div class="list" id="list">
+			<h1>职工动态</h1>
+			<ul>			
+			</ul>
+		</div>
+	<div class="list2" id="list2" >
+			<h1>校园公告</h1>
+			<ul>
+			</ul>
+		</div>
+
+		<div contenteditable="true"id="txt">财政有公告？发一条吧~<img src="img/chiya.gif"/></div>
+			<form action="MsgAdd" method="post">
+					<!--此下标签起一个数据转换作用-->
+					<input type="text" class="Txt" name="Txt" style="display: none;" />
+					<input type="text" class="DateTime" name="DateTime" id="DateTime" style="display: none;" />
+					<input type="submit" value="发表" class="pu" />
+					<input type="button" value="添加表情" class="biaoqing" />
+				</form>
+				<div class="photo" style="display: none;">
+					<img src="img/weixiao.gif" />
+					<img src="img/wuzuixiao.gif" />
+					<img src="img/chiya.gif" />
+					<img src="img/daxiao.gif" />
+					<img src="img/deyi.gif" />
+					<img src="img/kenai.gif" />
+					<img src="img/kun.gif" />
+					<img src="img/se.gif" />
+					<img src="img/bishi.gif" />
+					<img src="img/zilian.gif" />
+					<img src="img/cahan.gif" />
+				</div>
+
+		<!--<input type="button" class="button" value="测试"></input>-->
+	</body>
+	<script type="text/javascript" src="js/Language.js" ></script>
+</html>

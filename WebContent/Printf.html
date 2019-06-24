@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/Printf.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<title>打印信息</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	     <script type="text/javascript" src="js/Printf.js"></script>
+		<script type="text/javascript" src="js/html2canvas.js" ></script>
+		<script type="text/javascript" src="js/jsPdf.debug.js" ></script>
+	</head>
+
+	<body>
+		<div class="up">
+			<img src="img/Staff_logo.png" />
+			<ol>
+				<li>
+					<a href="Staff.html">首页</a>
+				</li>
+				<li>
+					<a href="StaffInfo.html">个人信息</a>
+				</li>
+				<li>
+					<a href="Updata.html">变动申请</a>
+				</li>
+				<li>
+					<div>
+						<a href="Payroll.html">薪资及管理</a>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="body">
+			<div class="text">
+				<div class="text_top">
+					<div class="text_down_up"></div>
+					<strong>打印详情</strong>
+					<div class="text_down_down"></div>
+				</div>
+				<div id="Start">
+					<!--startprint-->
+					<div class="text_down">
+						<table class="table-hover">
+							<tr>
+								<td rowspan="2">领款方式</td>
+								<td colspan="2" rowspan="2">网上转账</td>
+								<td>姓名</td>
+								<td id="StaffName"></td>
+								<td>收款账号</td>
+								<td>无</td>
+							</tr>
+							<tr>
+								<td>身份证号</td>
+								<td id="IDNum"></td>
+								<td>职称底薪</td>
+								<td id="Payroll"></td>
+							</tr>
+							<tr>
+								<td colspan="2">工资细则</td>
+								<td rowspan="2">扣款标准</td>
+								<td rowspan="2" colspan="2">项目总费用</td>
+								<td rowspan="2" colspan="2">合计金额</td>
+							</tr>
+							<tr>
+								<td>项目</td>
+								<td>天数</td>
+							</tr>
+							<tr>
+								<td>扣款项</td>
+								<td id="Sleep"></td>
+								<td>100元/天</td>
+								<td id="SleepMoney" colspan="2">100元</td>
+								<td colspan="2" id="SM"></td>
+							</tr>
+							<tr>
+								<td>奖金项</td>
+								<td id="OverTime">3天</td>
+								<td>200元/天</td>
+								<td colspan="2" id="OverTimeMoney"></td>
+								<td colspan="2" id="OTM"></td>
+							</tr>
+							<tr>
+								<td>合计</td>
+								<td colspan="4" id="Money"></td>
+								<td rowspan="2">收款方式</td>
+								<td rowspan="2">凭条领取</td>
+							</tr>
+							<tr>
+								<td>打印时间</td>
+								<td colspan="4" id="Getdate"></td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+
+				<!--endprint-->
+					<div id="pr">
+							<!--<button id="Down">保存</button>-->
+						<input id="btnPrint" type="button" value="打印缴费凭据" onclick="preview(0)" />
+						</div>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/xiazai.js" ></script>
+
+</html>

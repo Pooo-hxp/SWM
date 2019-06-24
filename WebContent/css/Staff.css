@@ -1,0 +1,158 @@
+.body{
+	border: 1px solid pink;
+	margin: 0 auto;
+	width: 1100px;
+	height: 1200px;	}
+.body_bottom_left{
+	float: left;
+	margin-top: 300px;
+	/*margin-left: 5px;*/
+	height: 842px;
+	width: 23%; 
+}
+.body_bottom_middle{
+	float: left;
+	height: 442px;
+	width: 50%;
+	/*background: pink;*/
+}
+.body_right_middle a:hover{
+	color: #0086c8;
+}
+.body_right_middle{
+	width: 550px;
+	height: 30px;
+	border-bottom: 1px solid #D7D7D7;
+	box-sizing: border-box;
+	/*background: rgba(0,0,0,0.1);*/
+}
+.active{
+	color: #0086c8;
+	border-bottom: 2px solid #0086c8;	
+}
+.body_right_middle_top1{
+	margin-left: 30px;
+	float: left;
+	height: 30px;
+	padding: 5px;
+	cursor: pointer;	
+    box-sizing: border-box;
+}
+.body_right_middle_top2{
+	margin-left: 15px;
+	float: left;
+	height: 30px;
+	cursor: pointer;
+	text-align: center;
+	box-sizing: border-box;  
+	padding: 5px;
+	width: 100px;
+}
+.middle_item{
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	padding: 20px;
+	overflow-y: scroll;		
+	/*background: ghostwhite;*/
+	box-sizing: border-box;
+}
+.Staff{
+	border-bottom:  1px solid black;
+	padding: 20px;
+}
+.Staff_p{
+	margin-left: 300px;
+	height: 25px;
+	width: 180px;
+}
+.body_bottom_right{
+	float: right;
+	height: 542px;
+	margin-top: 27px;
+	width: 27%;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 1px solid gray;
+}
+.body_bottom_right_txt{
+	padding: 20px;
+	border: 1px solid black;
+}
+.top{
+	height: 20%;
+	width: 100%;
+	background: url(../img/background.jpg);
+	background-position-x: -80px;
+	background-position-y: -610px;
+}
+ ul li{
+	list-style: none;
+}
+ul li img{
+	position: absolute;
+}
+ul li a{
+	text-decoration: none;
+}
+.top_down {
+	margin-top: -16px;
+	width: 100%;
+	height: 60px;
+	/*background:url(../img/bg_index_top.png);*/
+}
+.top_down ul li:hover{
+	height: 22px;
+	background: linear-gradient(to left,pink,skyblue);
+}
+.top_down ul li{
+	padding: 15px 0px 15px 0px ;
+	float: left;
+	width: 25%;
+	height: 30%;
+	text-align: center;
+}
+.top_down a{
+	color: green;
+}
+.banner{	
+	position: absolute;
+	margin-top: 0px;
+	width:660px;
+	height: 300px;
+
+}
+#it  img{
+	margin-left: -40px;
+	margin-top: -15px;
+	width:660px ;
+	height: 298px;  /*等图片*/
+}
+.add img{
+	float:right;
+	width: 436px;
+	height: 298px;
+}
+.left_btn{
+	position: absolute;
+	width: 40px;
+	height: 70px;
+	top: 140px;
+	background-position-x: -85px;
+	background-image: url(../img/kongjian.png);
+}
+.left_btn:hover{
+	background-position-x: 0px;
+}
+.right_btn{
+	position: absolute;
+	width: 40px;
+	height: 70px;
+	top: 140px;
+	left: 618px;
+	background-position-x: 46px;
+	background-image: url(../img/kongjian.png);
+}
+.right_btn:hover{
+	background-position-x: 125px;
+}

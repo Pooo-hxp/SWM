@@ -86,37 +86,13 @@ $(".photo  img").click(function(){
 		success:function(data){
 			var data1=JSON.parse(data);
 			for (var i=data1.length-1;i>=0;i--) { //倒序，使得越近的通知，越靠前排列
-					var li=document.createElement("li");
-					li.className="list_text";
-					var a1=document.createElement("a");
-					var p=document.createElement("p");		
-					var span=document.createElement("span");
-					var div=document.createElement("div");
-					var a2=document.createElement("a");
-					var p2=document.createElement("p");
-					var span2=document.createElement("span");
-					div.className="text";
-					span.className="Date";
-					span2.className="StaffName";
-			/* 以上代码自动生成以下格式标签
-				<li class="">
-					<a><p><span class="Date">时间</span></p>
-					   <div class="text"><a>发布内容</a></div>
-					   <p><span class="StaffName">发表人姓名</span></p>
+				$("#list2 ul").append(`
+                                <li class="list_text">
+					<a><p><span class="Date">${data1[i]["DateTime"]}</span></p>
+					   <div class="text"><a>${data1[i]["Txt"]}</a></div>
+					   <p><span class="StaffName">一一${data1[i]["StaffName"]}</span></p>
 					</a>
-				</li>
-			*/
-					div.innerHTML+=data1[i]["Txt"]
-					span2.innerHTML="一一"+data1[i]["StaffName"];
-					span.innerHTML=data1[i]["DateTime"];
-					p.appendChild(span);
-					p2.appendChild(span2);				
-					div.appendChild(a2);
-					a1.appendChild(p);
-					a1.appendChild(div);
-					a1.appendChild(p2);
-					li.appendChild(a1);	
-					$("#list2 ul").append(li);				
+				</li>`);														
 			}
 		}	
 	})
@@ -128,29 +104,13 @@ $(".photo  img").click(function(){
 		success:function(data){
 			var data1=JSON.parse(data);
 			for (var  i=data1.length-1;i>=0;i--) {
-					var li=document.createElement("li");
-					li.className="list_text";
-					var a1=document.createElement("a");
-					var p=document.createElement("p");		
-					var span=document.createElement("span");
-					var div=document.createElement("div");
-					var a2=document.createElement("a");
-					var p2=document.createElement("p");
-					var span2=document.createElement("span");
-					div.className="text";
-					div.innerHTML+=data1[i]["Txt"]
-					span.className="Date";
-					span2.className="StaffName";
-					span2.innerHTML="一一"+data1[i]["StaffName"];
-					span.innerHTML=data1[i]["DateTime"];
-					p.appendChild(span);
-					p2.appendChild(span2);				
-					div.appendChild(a2);
-					a1.appendChild(p);
-					a1.appendChild(div);
-					a1.appendChild(p2);
-					li.appendChild(a1);	
-					$("#list ul").append(li);			
+				$("#list2 ul").append(`
+                                <li class="list_text">
+					<a><p><span class="Date">${data1[i]["DateTime"]}</span></p>
+					   <div class="text"><a>${data1[i]["Txt"]}</a></div>
+					   <p><span class="StaffName">一一${data1[i]["StaffName"]}</span></p>
+					</a>
+				</li>`);			
 			}
 		}	
 	});

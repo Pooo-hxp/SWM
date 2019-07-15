@@ -72,27 +72,6 @@ $(function() {
 		 txt= txt.replace(/草|日|操|fuck|逼|靠|傻|屌/gi, '**'); //正则过滤
 		 $(".Txt").val(txt);
 	});
-	$(".pu").click(function(){
-
-		var div=document.createElement("div");
-				var p1=document.createElement("p");
-				var a=document.createElement("a");
-				a.appendChild(document.createTextNode("刚刚："));
-				a.href="StaffInfo.html";
-				p1.appendChild(a);
-				div.appendChild(p1);
-				var txt2=document.getElementById("body_bottom_right_txt").innerHTML;
-				div.innerHTML+=txt2;
-				var p2=document.createElement("p");
-				var txt3=document.getElementById("DateTime").value;
-				p2.appendChild(document.createTextNode(txt3));
-				p2.className="Staff_p";
-				div.appendChild(p2);
-				div.className="Staff";
-				var insert=document.getElementsByClassName('Staff')[0];
-				//---使其保持最新发布的始终在上方。----
-				document.getElementsByClassName("middle_item")[1].insertBefore(div,insert)
-	})
 //------以下为获取数据库中存放的用户留言数据---------
 		//----学院公告留言数据获取---------------
 		$.ajax({

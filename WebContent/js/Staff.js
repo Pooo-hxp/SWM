@@ -81,17 +81,13 @@ $(function() {
 		success:function(data){
 			var data1=JSON.parse(data);
 			for ( var i=data1.length-1;i>=0;i--) {
-				var div=document.createElement("div");
-				var p1=document.createElement("p");
-				p1.appendChild(document.createTextNode(data1[i]["StaffName"]+"："))
-				div.appendChild(p1);
-				div.innerHTML+=data1[i]["Txt"];
-				var p2=document.createElement("p");
-				p2.className="Staff_p";
-				p2.appendChild(document.createTextNode(data1[i]["DateTime"]));
-				div.appendChild(p2);
-				div.className="Staff";
-				document.getElementsByClassName("middle_item")[0].appendChild(div);				
+				document.getElementsByClassName("middle_item")[1].appendChild(`
+                                  <div class="Staff">
+                                  <p>${data1[i]["StaffName"]}+"：" </p>
+                                        ${data1[i]["Txt"]}
+                                   <p class="Staff_p">${data1[i]["DateTime"]}</p>
+                                 </div>
+                            `);						
 			}
 		}	
 	})

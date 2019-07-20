@@ -36,11 +36,6 @@ txt.onkeyup=function(){
             var x='http://www.runoob.com/';
             var y=keyhtml[flag]+".html";
             flag>=6?window.open(x+y):window.open(y);
-           // if (flag<6) {   //判定是否要访问外部网页
-           //     window.open(keyhtml[flag]+'.html');
-          //  } else {
-          //      window.open('http://www.runoob.com/'+keyhtml[flag]+'.html');
-         //   }
        };
       }
     }

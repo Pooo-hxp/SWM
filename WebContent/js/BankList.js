@@ -77,7 +77,7 @@ $(function() {
 	function toPage(now) {
 		$("#main").animate({
 			top: (now + 'px')
-		}, 1000); //jquery实现动画效果
+		}, 1000); 
 		if (now=='-2014') {
 			$(".act").css("display","block");
 			for(var i=0;i<3;i++){

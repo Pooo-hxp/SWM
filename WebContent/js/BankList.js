@@ -35,7 +35,7 @@ $(function() {
 			obj[i].style.height = hei + "px"; //遍历所有页面内的div,若div类名是page；
 		}                                       //则规范其高度为固定页面可视高度；
 	}                                          //此举为方便划分页面；
-	//加时间控制，防止滚轮过度灵敏，一次翻好几屏
+	//防止滚轮过度灵敏，一次翻好几屏
 	var startTime = 0, //翻屏起始时间  
 		endTime = 0,
 		now = 0;

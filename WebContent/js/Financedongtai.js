@@ -51,32 +51,6 @@ $(".photo  img").click(function(){
 		var dele=document.getElementById("txt");
 			dele.innerHTML="";
 	})
-	//下为假数据测试使用，测试完成废弃。
-	$(".button").click(function(){
-		var li=document.createElement("li");
-		li.className="list_text";
-		var a1=document.createElement("a");
-		var p=document.createElement("p");		
-		var span=document.createElement("span");
-		var div=document.createElement("div");
-		var a2=document.createElement("a");
-		var p2=document.createElement("p");
-		var span2=document.createElement("span");
-		div.className="text";
-		div.innerHTML='这是JS展示文本<img src="img/kenai.gif"/>'; //测试生效
-		span.className="Date";
-		span2.className="StaffName";
-		span2.innerHTML="一一"+"网三" ;//测试生效
-		span.innerHTML="5月14日22时12分" ;//测试生效
-		p.appendChild(span);
-		p2.appendChild(span2);				
-		div.appendChild(a2);
-		a1.appendChild(p);
-		a1.appendChild(div);
-		a1.appendChild(p2);
-		li.appendChild(a1);	
-		$("#list2 ul").append(li);
-	})
 //---------------------以下为获取数据库中存放的不同用户留言信息--------------------
 		//----学院公告留言数据获取---------------
 		$.ajax({

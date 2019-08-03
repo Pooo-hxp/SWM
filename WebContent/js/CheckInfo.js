@@ -4,7 +4,7 @@ $(function() {
 		type: "get",
 		url: "CheckInfoServlet",
 		success: function(data) {
-			var A = ""; //用于装大写金额字符串
+			var A = ""; 
 			var a = data["Payroll"] * 1 + data["OverTime"] * 200 - data["Sleep"] * 100;//需要轉換的數字
 			a=String(a);
 			$("#StaffNum").html(data["StaffNum"]);

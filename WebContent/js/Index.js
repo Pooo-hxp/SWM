@@ -11,7 +11,7 @@
 		codeV.value = code;
 	}
 	function validate() {
-		var oValue = document.getElementById('code_input').value.toUpperCase();//转为大写，方便验证
+		var oValue = document.getElementById('code_input').value.toUpperCase();
 		if(oValue == '') {
 			alert("请输入验证码");
 			return false;
@@ -33,7 +33,7 @@
 				alert('验证码错误，请重新输入');
 				$(".out").css("display","none"); 
 				$(".inner").css("width","0px");
-				$("#code_input").val(""); //清空验证码
+				$("#code_input").val(""); 
 			});
 			var timerID = setInterval(function() { /*设置计时器,动态的改变span的文本显示*/
 				var num = Math.ceil($(".inner").width() / $(".out").width() * 100); 

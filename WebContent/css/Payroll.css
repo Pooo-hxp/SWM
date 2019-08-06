@@ -51,7 +51,7 @@
 	margin-left: 9px;
 }
 ul li:hover{
-	cursor: pointer; /*改变光标样式*/
+	cursor: pointer; 
 	background-color: #f99d32;
 	color: black;
 }
@@ -59,7 +59,6 @@ ul li:hover{
 	float: right;
 	width: 700px;
 	height: 50%;
-	/*background: green;*/
 }
 .body{
 	position: absolute;
@@ -114,9 +113,6 @@ ul li:hover{
 	background: #f99d32;
 	border-bottom-right-radius: 15px;
 	border-top-right-radius: 15px;
-	/*border-top:1px solid black;*/
-/*	border-bottom: 1px solid black; 上/右/下/是否使用边框,暂时搁置*/
-	/*border-right: 1px solid black ;*/
 }
 .item{
 	line-height: 50px;
@@ -174,9 +170,7 @@ ul li:hover{
 	width: 458px;
 	text-align: center;
 	padding: 0px;
-	/* background: #f7f5f4; */
 	background: darkcyan;
-	/* display: none; */
 	cursor: pointer;
 
 }

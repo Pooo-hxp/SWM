@@ -22,7 +22,6 @@ div {
 }
 
 .header {
-	/* color: rgba(196, 178, 218, 0.431); */
 	font-size: 40px;
 	text-align: center;
 	text-shadow: 2px 2px 2px darkgray, 2px 2px 2px royalblue;
@@ -41,14 +40,12 @@ div {
 	border: 2px solid blue;
 	border-radius: 10px;
 	overflow: hidden;
-	/* 超出部分隐藏 */
 	display: none;
 }
 
 .inner {
 	height: 20px;
 	width: 0;
-	/*进度条初始我给设为零*/
 	background: linear-gradient(to left, red, pink, skyblue)
 }
 

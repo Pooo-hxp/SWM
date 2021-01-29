@@ -1,5 +1,5 @@
 # SWM
-工资管理系统， Javaweb课程相关，以MVC为设计思想前后端完全分离和舍友两个人协助完成
+工资管理系统， Javaweb课程相关，以MVC为设计思想前后端完全分离
 ----
 #### 所用到的技术栈是JavaScript+ajax+bootstrap+java+mysql  
 引用很简单，克隆或者下载到本地，直接导入eclipse配置下Tomcat并把数据库文件导入数据库就能运行  
